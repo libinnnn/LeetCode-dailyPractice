@@ -10,7 +10,7 @@ class Solution {
         m--;
         n--;
         while (n >= 0){ // 是nums1先判断，作为最后进行处理的序列
-            while (m >= 0 && nums2[n] < nums1[m]){ // 因为是nums作为最后的序列判断，那么此时应该先判断nums2
+            while (m >= 0 && nums2[n] < nums1[m]) { // 因为是nums2作为最后的序列判断，那么此时应该先判断nums1,交换nums1和nums1
                 int indexM = m--;
                 int indexI = i--;
                 int tmp = nums1[indexM];
@@ -18,7 +18,7 @@ class Solution {
                 nums1[indexI] = tmp;
             }
 
-            // 全部处理完成后处理nums1序列
+            // 全部处理完成后处理nums1序列，交换num2和nums1
             int indexM = i--;
             int indexN = n--;
             int tmp = nums2[indexN];
