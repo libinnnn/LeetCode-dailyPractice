@@ -21,7 +21,7 @@ public class Solution {
                 if(j == 1 && k== 1){
                     continue;
                 }
-                path[j][k] = path[j-1][k] + path[j][k-1]; // 转移方程式
+                path[j][k] = path[j-1][k] + path[j][k-1]; // 状态转移方程式
             }
         }
 
