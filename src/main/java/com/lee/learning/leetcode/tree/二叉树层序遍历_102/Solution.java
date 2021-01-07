@@ -23,7 +23,7 @@ public class Solution {
 
         // 循环队列进行判断
         while (!queue.isEmpty()) {
-            List<Integer> level = new ArrayList<Integer>();
+            List<Integer> level = new ArrayList<Integer>(); // 用于记录每层的结构
             int concurrentLevelSize = queue.size();  // 记录层节点的个数，来对每一层进行元素的切分，归类为一组集合中
             for(int i = 1; i <= concurrentLevelSize; i++){
                 TreeNode treeNode = queue.poll();
