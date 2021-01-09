@@ -1,4 +1,4 @@
-package com.lee.learning.leetcode.dynamicPlanning.组合总数_39;
+package com.lee.learning.leetcode.递归回溯.组合总数_39;
 
 import java.util.ArrayList;
 import java.util.List;

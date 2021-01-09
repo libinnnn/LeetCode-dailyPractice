@@ -1,6 +1,7 @@
 package com.lee.learning.thread;
 
 import java.util.HashMap;
+import java.util.Map;
 import java.util.concurrent.*;
 import java.util.concurrent.locks.ReentrantLock;
 
@@ -50,8 +51,11 @@ public class CountDown {
         Object object = new Object();
         object.notify();
         object.toString();
-        
+        Map<String, String> map = new HashMap<String, String>();
+        map.put("a", "aaa");
 
+        Map map111 = new ConcurrentHashMap();
+        map111.put("1", "1");
 
 
 
