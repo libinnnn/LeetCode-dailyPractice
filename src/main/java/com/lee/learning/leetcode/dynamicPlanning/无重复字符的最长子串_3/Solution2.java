@@ -13,7 +13,7 @@ public class Solution2 {
         int result = 0;
         for(int begin = 0, end = 0 ; end < length; end ++){
             if(map.containsKey(s.charAt(end))){
-                begin = Math.max(map.get(s.charAt(end)), begin);  // 滑动窗口内的才需要跟新
+                begin = Math.max(map.get(s.charAt(end)), begin);  // 滑动窗口内的才需要更新
             }
             result = Math.max(result, end-begin+1); // 更新最大长度
 
